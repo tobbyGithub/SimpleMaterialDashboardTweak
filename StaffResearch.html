@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>UI-CSC</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="viewport" content="width=device-width" />
+	<!-- Bootstrap core CSS     -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<!--  Materia Dashboard CSS    -->
+	<link href="assets/css/material-dashboard.css" rel="stylesheet" />
+	<!--  CSS forDemo Purpose, don't include it in your project     -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+	<!--     Fonts and icons     -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="sidebar" data-color="orange" data-image="assets/img/sidebar-1.jpg">
+			<!--
+		        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+		        Tip 2: you can also add an image using data-image tag
+		    -->
+
+			<div class="logo">
+				<!--<a href="http://www.creative-tim.com" class="simple-text">
+					Creative Tim
+				</a>-->
+
+				<a href="index.html"><img src="../assets/img/logo.png"" class=" simple-text img-responsive" alt=""></a>
+			</div>
+
+			<div class="sidebar-wrapper">
+				<ul class="nav">
+					<li>
+						<a href="StaffViewProfile.html">
+	                        <i class="material-icons">Profile</i>
+	                        <p>Profile</p>
+	                    </a>
+					</li>
+					<li >
+						<a href="StaffEditProfile.html">
+	                        <i class="material-icons">person</i>
+	                        <p>Edit Details</p>
+	                    </a>
+					</li>
+					<li class="active">
+						<a href="StaffResearch.html">
+	                		<i class="material-icons">book</i>
+	                        <p>Research</p>
+	                    </a>
+					</li>
+					<li>
+						<a href="index.html">
+	                        <i class="material-icons">home</i>
+	                        <p>Go to Website</p>
+	                    </a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+		<div class="main-panel">
+			<nav class="navbar navbar-transparent navbar-absolute">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Staff Profile</a>
+					</div>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+
+							<li>
+								<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+	 							   <i class="material-icons">person</i>
+	 							   <p class="hidden-lg hidden-md">Profile</p>
+	 						   </a>
+							</li>
+						</ul>
+
+
+					</div>
+				</div>
+			</nav>
+
+			<div class="content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-9">
+							
+							
+							<div class="card">
+								<div class="card-header" data-background-color="orange">
+									<h4 class="title">Edit Profile</h4>
+									<p class="category">Complete your profile</p>
+								</div>
+								<div class="card-content">
+									<form>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group label-floating">
+													<label class="control-label">Title</label>
+													<input type="text" class="form-control">
+												</div>
+											</div>
+											</div>
+
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group label-floating">
+													<label class="control-label">Author</label>
+													<input type="text" class="form-control">
+												</div>
+											</div>
+										</div>
+
+
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group label-floating">
+													<label class="control-label">Year</label>
+													<input type="text" class="form-control">
+												</div>
+											</div>
+										</div>
+											
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group label-floating">
+													<label class="control-label">Url</label>
+													<input type="text" class="form-control">
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+										<button type="submit" class="btn btn-primary pull-right">Add paper</button>
+										<div class="clearfix"></div>
+										</div>
+									</form>
+								</div>
+							</div>
+
+
+
+
+							<div class="card">
+								<div class="card-header" data-background-color="orange">
+									<h4 class="title">Reasearch papers</h4>
+								</div>
+							
+								<div class="card-content">
+									 <div class="card-content table-responsive">
+	                                <table class="table">
+	                                    <thead class="text-warning">
+	                                    	<th>ID</th>
+	                                    	<th>Title</th>
+											<th>Authors</th>
+	                                    	<th>Year</th>
+											<th col-xs-2 >Link</th>
+	                                    </thead>
+	                                    <tbody>
+	                                        <tr>
+	                                        	<td>1</td>
+	                                        	<td>Dynamic Resource Provisioning for Energy Efficient Cloud Radio Access Networks</td>
+	                                        	<td>Nuo Yu ; Zhaohui Song ; Hongwei Du ; Hejiao Huang ; Xiaohua Jia</td>
+												<td>2017</td>
+												<td>http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5992 </td>
+												<td><button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+																<i class="material-icons">close</i>
+													</button>
+													</td>
+	                                        </tr>
+	                                        <tr>
+	                                        	<td>2</td>
+	                                        	<td>Stackelberg Game for Energy-aware Resource Allocation to Sustain Data Centers Using RES</td>
+	                                        	<td>Sinaai-Waas</td>
+												<td>2017</td>
+												<td>http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5992</td>
+												<td><button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+																<i class="material-icons">close</i>
+													</button>
+													</td>
+	                                        </tr>
+	                                        <tr>
+	                                        	<td>3</td>
+	                                        	<td>Adaptive Cloud Deployment Using Persistence Strategies and Application Awareness</td>
+	                                        	<td>Jim (Zhanwen) Li ; Murray Woodside ; John Chinneck ; Marin Litiou</td>
+												<td>2017</td>
+												<td>http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5992</td>
+												<td><button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+																<i class="material-icons">close</i>
+													</button>
+													</td>
+	                                        </tr>
+	                                        <tr>
+	                                        	<td>4</td>
+	                                        	<td>Agent-Based Interactions and Economic Encounters in an Intelligent InterCloud</td>
+	                                        	<td>Kwang Mong Sim</td>
+												<td>2017</td>
+												<td>http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5992</td>
+												<td><button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+																<i class="material-icons">close</i>
+													</button>
+													</td>
+	                                        </tr>
+	                                        <tr>
+	                                        	<td>5</td>
+	                                        	<td>Cloud Migration Research: A Systematic Review</td>
+	                                        	<td>Nuo Yu ; Zhaohui Song ; Hongwei Du ;</td>
+												<td>2017</td>
+												<td>http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5992</td>
+												<td><button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+																<i class="material-icons">close</i>
+													</button>
+													</td>
+	                                        </tr>
+	                                       
+	                                    </tbody>
+	                                </table>
+
+	                            </div>
+									
+								</div>
+
+
+
+
+
+							</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<!--   Core JS Files   -->
+<script src="assets/js/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/material.min.js" type="text/javascript"></script>
+
+<!--  Notifications Plugin    -->
+<script src="assets/js/bootstrap-notify.js"></script>
+
+<!-- Material Dashboard javascript methods -->
+<script src="assets/js/material-dashboard.js"></script>
+</html>
